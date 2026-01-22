@@ -1,0 +1,6 @@
+@EmailTracker_HostAddress = http://localhost:5225
+
+GET {{EmailTracker_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
