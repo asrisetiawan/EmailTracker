@@ -57,6 +57,7 @@ namespace EmailTracker
                 };
             });
 
+            builder.Services.AddAllElasticApm();
 
             builder.Services.AddControllers();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -66,7 +67,7 @@ namespace EmailTracker
             });
 
             // Add this line to register BounceMonitorService as a hosted service in the DI container
-            builder.Services.AddHostedService<BounceMonitorService>();
+            //builder.Services.AddHostedService<BounceMonitorService>();
 
             var app = builder.Build();
 
